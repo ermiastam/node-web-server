@@ -1,6 +1,7 @@
 const express = require('express');
 const hbs = require('hbs'); // express.js view engine called handlebars.js is required
 const fs = require('fs');
+const port = process.env.PORT || 3000;
 
 var app = express();
 
@@ -25,10 +26,11 @@ console.log('Unable to append to Server.log');
     next();
  });  
  
- 
+ /*
  app.use((req,res,next)=>{
 res.render('maintenance');
  });
+ */
 app.use(express.static(__dirname + '/public'));//__dirname takes us to the project folder
                                             //is a middle ware
 hbs.registerHelper('getCurrentYear',()=>{
@@ -71,6 +73,7 @@ app.get('/bad', (req, res) => {
     });
 });
 //app.listen(3000);
-app.listen(3000, () => {
-    console.log('Server is up and running on port 3000.');
+
+app.listen(port, () => {
+    console.log(`Server is up and running on port ${port}`);
 });
