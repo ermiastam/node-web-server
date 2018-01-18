@@ -12,7 +12,7 @@ app.set('view engine', 'hbs'); //""set" sets express related configuration,(key,
 app.set('views', './views') This defaults to the views directory in the application root directory,
 so no need to write it explicitly.
 */
-//app.use(express.static(__dirname + '/public')); //__dirname takes us to the project folder
+app.use(express.static(__dirname)); //__dirname takes us to the project folder
                                                 //is a middle ware
  app.use((req,res,next)=>{//unless next is clalled, the handlers(get,post) will not be fired
  var now = new Date().toString();
