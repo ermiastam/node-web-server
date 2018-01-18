@@ -33,6 +33,8 @@ res.render('maintenance');
  */
 app.use(express.static(__dirname + '/public'));//__dirname takes us to the project folder
                                             //is a middle ware
+app.use(express.static(__dirname));
+                                            
 hbs.registerHelper('getCurrentYear',()=>{
     return new Date().getFullYear();
 });
