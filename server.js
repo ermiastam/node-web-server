@@ -40,7 +40,7 @@ hbs.registerHelper('toUpperCase',(text)=>{//toUpperCase is used in welcome page
 return text.toUpperCase();
 });
 
-app.get('/', (req, res) => {
+app.get('/ermiastam.github.io/', (req, res) => {
     //res.send('<h1>Hello Express</h1>');
     // res.send({
     //     name:"Ermias",
@@ -55,7 +55,7 @@ app.get('/', (req, res) => {
 });
 
 
-app.get('/about', (req, res) => {
+app.get('/ermiastam.github.io/about', (req, res) => {
     //res.send('<h1>Hello Express</h1>');// renders html tag
     //  res.send('About Page'); //renders text to html page
     // res.render('about');//having the 'hbs' extension is optional here(about.hbs)
@@ -66,7 +66,7 @@ app.get('/about', (req, res) => {
     res
 });
 
-app.get('/bad', (req, res) => {
+app.get('/ermiastam.github.io/bad', (req, res) => {
     //res.send('<h1>Hello Express</h1>');
     res.send({
         error: "unable reach the site."
