@@ -68,6 +68,12 @@ app.get('/about', (req, res) => {
     res
 });
 
+app.get('/projects',(req,res)=>{
+res.render('projects',{
+    pageTitle: 'Projects Page', 
+});
+});
+
 app.get('/bad', (req, res) => {
     //res.send('<h1>Hello Express</h1>');
     res.send({
