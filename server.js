@@ -50,8 +50,7 @@ app.get('/', (req, res) => {
     // });
     res.render('welcome', {
         welComeMsg: "Wel Come to my web site",
-        pageTitle: 'Wale Software Engineer',
-        claim:'ዋሌ የማትመጣ ከሆነ አመጣለሁ ኣትበል'
+        pageTitle: 'Home Page'
        // currentYear: new Date().getFullYear()
 
     });
