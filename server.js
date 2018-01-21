@@ -50,7 +50,7 @@ app.get('/', (req, res) => {
     // });
     res.render('welcome', {
         welComeMsg: "Wel Come to my web site",
-        pageTitle: 'Home Page',
+        pageTitle: 'Wale Software Engineer',
        // currentYear: new Date().getFullYear()
 
     });
